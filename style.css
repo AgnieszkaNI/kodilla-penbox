@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet');
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    box-shadow: none;
+}
+
+body,
+html {
+    color: #444444;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    height: 100%;
+    font-family: "Lora", serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #ff5e57;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.splash {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    background-image: url(https://images.pexels.com/photos/159869/farmhouse-summer-holiday-holiday-summer-159869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 60%;
+    height: 70%;
+}
+
+.page-intro {
+    margin: auto;
+    text-align: center;
+}
+
+.main-title {
+    margin: 10;
+    font-weight: bold;
+    color: pink;
+    font-size: x-large;
+    font-family: cursive;
+    font-family: 'Lora', serif;
+    padding: 0 24px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.main-subtitle {
+    margin: 12px 0 60px 0;
+    font-weight: normal;
+    color: pink;
+    font-family: cursive;
+    font-family: "Lora", serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.btn {
+    padding: 16px 18px 16px 18px;
+    font-size: 14px;
+    background-color: pink;
+    color: orchid;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #ffcfd8;
+    color: orchid;
+}
+
+.section-title {
+    position: relative;
+    margin: 0 0 60px 0;
+    text-align: center;
+    color: black;
+    font-family: "Lora", serif;
+    font-weight: 800;
+}
+
+.section-title:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: orchid;
+    left: 50%;
+    bottom: -16px;
+    margin-left: -50px;
+}
+
+.about {
+    background-color: pink;
+}
+
+.section-intro {
+    margin: 36px 0 0 0;
+    color: black;
+    font-weight: normal;
+}
+
+.features-wrapper {
+    display: flex;
+}
+
+.feature {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    text-align: center;
+    margin: 24px 0 0 0;
+}
+
+.feature i {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: orchid;
+    font-size: 30px;
+    background-color: #dff9fb;
+    border-radius: 50%;
+}
+
+.feature h3 {
+    margin: 24px 0 0 0;
+    font-weight: bold;
+}
+
+.feature p {
+    margin: 24px 0 0 0;
+    padding: 0 24px;
+}
+
+.statement {
+    background-image: url("https://images.pexels.com/photos/262713/pexels-photo-262713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.statement p {
+    margin: 0;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.quotes-wrapper {
+    margin: 72px 0 0 0;
+    background-color: #ffdae0;
+}
+
+.quote {
+    width: 100%;
+}
+
+.quote blockquote {
+    padding: 0 30px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.quote footer {
+    margin: 24px 0 0 0;
+}
+
+.section.gallery {
+    padding: 60px 0 0 0;
+}
+
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 72px 0 0 0;
+}
+
+.gallery-item {
+    position: relative;
+    margin: 0;
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item:before {
+    position: absolute;
+    display: none;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    opacity: 0.2;
+}
+
+.gallery-item figcaption {
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 70%;
+    transform: translateY(-5%);
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.gallery-item:hover:before,
+.gallery-item:hover figcaption {
+    display: block;
+}
+
+.contact {
+    text-align: center;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    border: 1px solid #ff5e57;
+    width: 40px;
+    line-height: 20px;
+    border-radius: 5px;
+    border-color: powderblue;
+    position: center;
+    transition: all 0.5s;
+}
+
+.social-links li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: center;
+    padding: 4px;
+}
+
+.social-links li a.f_li {
+    color: blue;
+}
+
+.social-links li a.i_li {
+    color: gold;
+}
+
+.social-links li a.t_li {
+    color: lightblue;
+}
+
+.social-links li a.g_li {
+    color: red;
+}
+
+.social-links li:hover {
+    border-color: pink;
+    transition: border-color .5s;
+}
+
+.social-links li a:hover {
+    color: pink;
+    transition: color .5s;
+}
+
+.page-footer {
+    background-color: #dff9fb;
+    font-size: medium;
+    font-family: cursive;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.page-footer.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-footer p {
+    margin: 0;
+}
+
+.navigation {
+    background-color: #ffe9ed;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navigation ul li a {
+    color: #be2edd;
+    font-family: cursive;
+}
+
+.navigation ul li a:hover {
+    color: #d986eb;
+}
+
+.flickity-page-dots .dot {
+    width: medium;
+    height: medium;
+    background-color: red;
+}
+
+.flickity-button-icon {
+    fill: black;
+}
+
+@media (max-width: 767px) {
+    .features-wrapper {
+        display: block;
+    }
+    .feature {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .gallery-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .quote blockquote {
+        padding: 10px;
+    }
+}
